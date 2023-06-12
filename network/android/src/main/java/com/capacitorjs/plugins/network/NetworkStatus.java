@@ -6,6 +6,7 @@ public class NetworkStatus {
         WIFI("wifi"),
         CELLULAR("cellular"),
         NONE("none"),
+        VPN("vpn"),
         UNKNOWN("unknown");
 
         private String connectionType;

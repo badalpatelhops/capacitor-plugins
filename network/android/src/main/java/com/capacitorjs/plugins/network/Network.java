@@ -103,6 +103,8 @@ public class Network {
                         networkStatus.connectionType = NetworkStatus.ConnectionType.WIFI;
                     } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
                         networkStatus.connectionType = NetworkStatus.ConnectionType.CELLULAR;
+                    } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_VPN)) {
+                        networkStatus.connectionType = NetworkStatus.ConnectionType.VPN;
                     } else {
                         networkStatus.connectionType = NetworkStatus.ConnectionType.UNKNOWN;
                     }
